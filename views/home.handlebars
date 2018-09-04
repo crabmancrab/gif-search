@@ -1,0 +1,20 @@
+
+<form action="/">
+  <div class="search">
+    <div class="box1">
+      <h1>Search for GIFS</h1>
+    <!-- </div>
+    <div class="box2"> -->
+      <button type="submit">Search</button>
+      <input type="text" name="term">
+    </div>
+</div>
+
+</form>
+  <div id="gifs">
+{{#each gifs}}
+
+    <img src="{{this.images.fixed_height.url}}">
+
+{{/each}}
+</div>
